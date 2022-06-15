@@ -3,18 +3,89 @@ body {
 }
 
 h1 {
-    color:#025157;
+    color: #025157;
     text-align: center;
+    font-family: 'Alegreya', serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 p {
     color: #8b8b8bcc;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     font-size: 20px;
 }
 
 button {
-    color: white;
+    color: #fff;
     background-color: #025157;
+}
 
+.header {
+    /* margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    margin: 40px 20px 0;
+    font-size: 0;
+    height: 45px;
+}
+
+li {
+    display: inline;
+    margin: 0 10px 0;
+    color: #025157;
+}
+
+.header>* {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    height: 100%;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo>img {
+    width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: left;
+    color: #025157;
+    font-weight: 500;
+
+}
+
+ul {
+    margin: 0;
+}
+
+.actions {
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #67b54b;
+    margin-right: 10px;
+}
+.actions button {
+    background-color: #67b54b;
+    color: white;
+    font-family: sans-serif;
+    padding: 12px 14px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main {
+    margin-top: 140px;
+    text-align: center;
 }
