@@ -4,7 +4,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,800&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,800;1,900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,30 +13,32 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- Regresar pagina principal -->
-        <a href="/" class="logo">
-            <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
-        </a>
-        <!-- Menu -->
-        <nav class="navbar">
-            <ul>
-                <li>Products</li>
-                <li>Tempaltes</li>
-                <li>Pricing</li>
-                <li>Customers</li>
-                <li>Blog</li>
-                <li>Resources</li>
-                <li>About</li>
-            </ul>
-
-        </nav>
-        <!-- Acciones -->
-        <div class="actions">
-            <a href="">Sign In</a>
-            <button class="button">Start free trial</button>
-        </div>
-    </header>
+    <section class="fixed-header">
+        <header class="header">
+            <!-- Regresar pagina principal -->
+            <a href="/" class="logo">
+                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha">
+            </a>
+            <!-- Menu -->
+            <nav class="navbar">
+                <ul>
+                    <li>Products</li>
+                    <li>Tempaltes</li>
+                    <li>Pricing</li>
+                    <li>Customers</li>
+                    <li>Blog</li>
+                    <li>Resources</li>
+                    <li>About</li>
+                </ul>
+    
+            </nav>
+            <!-- Acciones -->
+            <div class="actions">
+                <a href="">Sign In</a>
+                <button class="button">Start free trial</button>
+            </div>
+        </header>    
+    </section>
     <section class="main">
         <h1>Build your blog. Build your business</h1>
         <p> Instantly publish articles, drive more traffic, grow your email list, and see your blog's
@@ -52,10 +54,58 @@
         <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="capterra" width="500px">
         <img src="https://assets.bedu.org/contents/TECM0017FRFUV2_Fronted_fundamentals_V2/TECM0017FRFUV2_S1_3_1.png" alt="">
     </section>
-    <section>
-        <video src="https://www.youtube.com/watch?v=MKpCDz0UjW4&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbAVMMKpCDz0UjW4&start_radio=1">
+    <br>
+    <br>
+    <br>
+    <section class="container">
+        <div class="contenedor-vid">
+            <video 
+            controls 
+            poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
+            > 
+            <source type="video/webm" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm">   
+            </video>
+            <img src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png" alt="Flechita" width="100px">      
+        </div>
+        <article class="cont">
+            <h1>Publish your blog in minutes, not hours.</h1>
+            <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+            <p>Start publishing today:</p>
+            <form>
+                <input type="email" />
+                <button tipe="submit">Start My Trial</button>
+            </form>
+        </article>
+    </section>
+    <section class="succes-case">
+        <article class="description">
+            <h2>Growing ecommerce brands rely on Matcha.</h2>
+            <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content and consistent performance from their blogs.</p>
+            <button>Who Uses Matcha?</button>
+            <figure>
+                <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="brands">
+            </figure>
+        </article>
+        <article class="cases">
+            <div class="card-header">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="white-guy">
+            </div>
+            <div class="company">
+                <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="logo">
+            </div>
+            <div class="card-body">
+                <h4>Everly</h4>
+                <h3>Early-Stage CPG Brand increases Lead Conversion 20x, Ecommerce Revenue 20%</h3>
+                <div class="results">
+                    <img src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping-thumbnail.png" alt="cart income">
+                    <p>22% of monthly revenue influenced by content</p>
+                </div>
+            </div>
+            <div class="card-foter">
+                <button>See Case Study</button>
+            </div>
 
-        </video>
+        </article>
     </section>
 </body>
 
