@@ -105,10 +105,10 @@ ul {
 }
 
 .container {
-  display: flex;
-  width: 70%;
-  align-items: center;
+  width: 90%;
   margin: 100px auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .contenedor-vid {
@@ -136,14 +136,13 @@ ul {
 .succes-case {
   font-family: sans-serif;
   background-color: #a1d683;
-  display: flex;
   padding: 70px;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
 .description {
-  width: 40%;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -178,8 +177,9 @@ ul {
 .cases {
   border-radius: 7px;
   background-color: white;
-  width: 20%;
+  width: 50%;
   position: relative;
+  justify-self: center;
 }
 
 .card-header img {
