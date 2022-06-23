@@ -133,6 +133,62 @@ ul {
   font-size: small;
 }
 
+.features {
+  padding: 40px 80px;
+  background-color: #025157;
+  height: 660px;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.features article {
+  width: 90%;
+  margin: 0 30px;
+  margin-bottom: 10px;
+}
+
+.features img {
+  width: 30%;
+}
+
+.large-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-img img {
+  width: 100%;
+}
+
+.features h3 {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.features p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.features a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #67b54b;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
 .succes-case {
   font-family: sans-serif;
   background-color: #a1d683;
@@ -194,7 +250,7 @@ ul {
   width: 100px;
   height: 100px;
   position: absolute;
-  bottom: 300px;
+  bottom: 320px;
   right: 20px;
   background-color: #F9DA73;
   border-radius: 50%;
@@ -242,6 +298,86 @@ ul {
   border: none;
   border-radius: 3px;
   font-weight: bolder;
+}
+
+.function {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.function h1 {
+  margin-bottom: 10px;
+}
+
+.function p {
+  margin-top: 0;
+  width: 70%;
+  color: #46484C;
+  font-size: 16px;
+}
+
+.function p a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.function button {
+  width: 15%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.important-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+}
+
+.card-sales {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 500px;
+  border: solid 1px #b0b1b3;
+}
+
+.card-sales img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+
+.card-sales h2 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-sales p {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #46484C;
+  padding: 0 20px;
+}
+
+.card-sales a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #67b54b;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
