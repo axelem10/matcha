@@ -13,13 +13,13 @@ h1 {
 p {
   color: rgba(139, 139, 139, 0.8);
   font-family: Verdana;
-  font-size: 20px;
+  font-size: medium;
+  margin: 0;
 }
 
 button {
   color: #fff;
   background-color: #025157;
-  margin-left: -10px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -107,7 +107,7 @@ ul {
 }
 
 .main {
-  margin-top: 285px;
+  margin-top: 200px;
   text-align: center;
 }
 
@@ -115,6 +115,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .main form input {
@@ -130,6 +131,7 @@ ul {
   border: none;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0;
+  margin-left: -10px;
 }
 
 .banner {
@@ -165,6 +167,12 @@ ul {
 
 .cont p {
   font-size: small;
+  color: #46484C;
+}
+
+.cont p:nth-child(3) {
+  color: #999;
+  margin: 10px 0;
 }
 
 .cont form {
@@ -185,6 +193,7 @@ ul {
   border: none;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0;
+  margin-left: -10px;
 }
 
 .features {
@@ -256,6 +265,8 @@ ul {
 }
 
 .description {
+  padding-left: 150px;
+  padding-top: 80px;
   width: 100%;
   margin-top: 50px;
 }
@@ -308,7 +319,7 @@ ul {
   width: 100px;
   height: 100px;
   position: absolute;
-  bottom: 320px;
+  bottom: 400px;
   right: 20px;
   background-color: #F9DA73;
   border-radius: 50%;
@@ -407,6 +418,7 @@ ul {
   border-radius: 5px;
   height: 500px;
   border: solid 1px #b0b1b3;
+  box-shadow: 2px 2px 5px #999;
 }
 
 .card-sales img {
@@ -477,7 +489,13 @@ ul {
     grid-template-columns: 1fr;
   }
   .cases {
-    display: none;
+    width: 100%;
+  }
+  .company {
+    bottom: 300px;
+  }
+  .description {
+    padding: 0%;
   }
   .description p {
     text-align: justify;
@@ -488,6 +506,7 @@ ul {
   }
   .description img {
     width: 100%;
+    margin-bottom: 30px;
   }
   .function button {
     width: auto;
