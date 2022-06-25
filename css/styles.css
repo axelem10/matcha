@@ -458,11 +458,17 @@ ul {
     width: 100%;
   }
   .main {
-    margin-top: 130px;
+    margin-top: 70px;
+  }
+  .main p:first-of-type {
+    color: black;
+    font-weight: 600;
+    margin-top: 15px;
   }
   .container {
     flex-direction: column;
     width: 100%;
+    margin: 50px auto;
   }
   .cont form {
     flex-direction: row;
@@ -474,9 +480,22 @@ ul {
   .cont > form > div > input {
     width: 65%;
   }
+  .cont {
+    margin-left: 0%;
+    padding: 5px;
+  }
+  .cont p:first-of-type {
+    margin-bottom: 35px;
+  }
+  .cont p:nth-child(3) {
+    color: #025157;
+  }
   .cont h1 {
     line-height: 90%;
     font-size: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .contenedor-vid {
     width: 100%;
@@ -488,24 +507,44 @@ ul {
     grid-template: repeat(4, 1fr)/1fr;
     padding: 40px 20px;
   }
+  .features article {
+    width: auto;
+  }
+  .features article img {
+    margin: 20px 0;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .large-img {
+    display: none;
+  }
   .succes-case {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
   .cases {
     width: 100%;
   }
   .company {
-    bottom: 300px;
+    bottom: 250px;
   }
   .description {
     padding: 0%;
+    margin-top: 0%;
+  }
+  .description h2 {
+    font-size: x-large;
+    font-weight: 900;
   }
   .description p {
     text-align: justify;
   }
   .description button {
+    margin-top: 20px;
     width: auto;
-    height: auto;
+    height: 50px;
+    border-radius: 8px;
   }
   .description img {
     width: 100%;
