@@ -449,6 +449,7 @@ ul {
    }
    .container {
     flex-direction: column;
+    width: 100%;
    }
 
    .cont form {
@@ -467,9 +468,12 @@ ul {
     font-size: 30px;
    }
 
-   .contenedor-vid video {
-    flex-direction: column;
-    max-width: 90%;
+   .contenedor-vid {
+    width: 100%;
+   }
+
+   iframe {
+    width: 100%;
    }
 
    .features {
