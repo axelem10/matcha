@@ -1,0 +1,696 @@
+@charset "UTF-8";
+body {
+  background-color: papayawhip;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: #025157;
+  text-align: center;
+  font-family: "Alegreya", serif;
+}
+
+p {
+  color: rgba(139, 139, 139, 0.8);
+  font-family: Verdana;
+  font-size: medium;
+  margin: 0;
+}
+
+button {
+  color: #fff;
+  background-color: #025157;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.header {
+  /* margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px; */
+  margin: 40px 20px 0;
+  font-size: 0;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: papayawhip;
+  z-index: 1;
+}
+
+li {
+  display: inline;
+  margin: 0 10px 0;
+  color: #025157;
+}
+
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 45px;
+  height: 100%;
+  vertical-align: middle;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 15%;
+}
+
+.logo > img {
+  width: 50%;
+}
+
+.navbar {
+  width: 100%;
+  text-align: left;
+  color: #025157;
+  font-weight: 500;
+}
+
+.bh-light {
+  background-color: #025157;
+}
+
+ul {
+  margin: 0;
+}
+
+.actions {
+  width: 15%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #67b54b;
+  margin-right: 10px;
+}
+
+.actions button {
+  background-color: #67b54b;
+  color: white;
+  font-family: sans-serif;
+  padding: 12px 14px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.main {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.main form input {
+  height: 50px;
+  border-radius: 7px;
+  border: solid 1px #a6a7aa;
+  padding-left: 10px;
+}
+
+.main form button {
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0;
+  margin-left: -10px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+}
+
+.contenedor-vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-vid img {
+  margin-top: 10px;
+}
+
+.cont {
+  margin-left: 20px;
+}
+
+.cont h1 {
+  font-size: 40px;
+}
+
+.cont p {
+  font-size: small;
+  color: #46484C;
+}
+
+.cont p:nth-child(3) {
+  color: #999;
+  margin: 10px 0;
+}
+
+.cont form {
+  display: flex;
+  align-items: center;
+}
+
+.cont input {
+  height: 50px;
+  border-radius: 7px;
+  border: solid 1px #a6a7aa;
+  padding-left: 10px;
+}
+
+.cont button {
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0;
+  margin-left: -10px;
+}
+
+.features {
+  padding: 40px 80px;
+  background-color: #025157;
+  height: auto;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+.card-2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.features article {
+  width: 50%;
+  margin: 0 30px;
+  margin-bottom: 10px;
+}
+
+.features img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.large-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-img img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.features h3 {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.features p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.features a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #67b54b;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.succes-case {
+  font-family: sans-serif;
+  background-color: #a1d683;
+  padding: 70px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.description {
+  padding-left: 150px;
+  padding-top: 80px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.description h2 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 52px;
+}
+
+.description p {
+  font-size: medium;
+  color: black;
+}
+
+.description button {
+  width: 30%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.description figure {
+  margin-left: 0%;
+  margin-top: 50px;
+}
+
+.description img {
+  width: 100%;
+}
+
+.cases {
+  border-radius: 7px;
+  background-color: white;
+  width: 50%;
+  position: relative;
+  justify-self: center;
+}
+
+.card-header img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.company {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 400px;
+  right: 20px;
+  background-color: #F9DA73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company img {
+  width: 50%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h4 {
+  color: #025157;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+}
+
+.results p {
+  margin-left: 10px;
+  font-size: small;
+}
+
+.results img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-foter {
+  display: flex;
+  justify-content: center;
+  margin: 15px 10px;
+}
+
+.card-foter button {
+  width: 90%;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.function {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.function h1 {
+  margin-bottom: 10px;
+}
+
+.function p {
+  margin-top: 0;
+  width: 70%;
+  color: #46484C;
+  font-size: 16px;
+}
+
+.function p a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.function button {
+  width: 15%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.important-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+}
+
+.card-sales {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 500px;
+  border: solid 1px #b0b1b3;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.card-sales img {
+  width: 100%;
+  height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-sales h2 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-sales p {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #46484C;
+  padding: 0 20px;
+}
+
+.card-sales a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #67b54b;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+  max-width: 370px;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+  max-height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+.success-stories .card .card-body {
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+  padding: 40px 1rem 1rem;
+}
+
+/* Estos son los estilos para textos y acomodo de elementos */
+.success-stories .card .card-body h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+  font-family: "Slabo 27px", serif;
+}
+
+.success-stories .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success-stories .card .card-body .results {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.success-stories .card .card-body .results img {
+  width: 26px;
+  margin-right: 20px;
+}
+
+.success-stories .card .card-body .results p {
+  margin: 0;
+}
+
+.success-stories .card .card-footer button {
+  display: block;
+  margin-left: 0;
+  border-radius: 5px;
+  font-size: 13;
+  font-weight: 600;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #025157;
+  color: #fff;
+  border: none;
+}
+
+.success-stories .card .card-footer {
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+}
+
+/* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+.success-stories .card .card-body .card-circle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+.success-stories .card .card-body .card-circle.everly {
+  background-color: #f9da73;
+  border: 5px solid #f9da73;
+}
+
+/* Los círculos deben recibir la imagen y ajustarla al tamaño */
+.success-stories .card .card-body .card-circle.everly img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 70px;
+  }
+
+  .main p:first-of-type {
+    color: black;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .cont form {
+    flex-direction: row;
+  }
+
+  .cont > form div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .cont > form > div > input {
+    width: 65%;
+  }
+
+  .cont {
+    margin-left: 0%;
+    padding: 5px;
+  }
+
+  .cont p:first-of-type {
+    margin-bottom: 35px;
+  }
+
+  .cont p:nth-child(3) {
+    color: #025157;
+  }
+
+  .cont h1 {
+    line-height: 90%;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-vid {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr)/1fr;
+    padding: 40px 20px;
+  }
+
+  .features article {
+    width: auto;
+  }
+
+  .features article img {
+    margin: 20px 0;
+  }
+
+  .card-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .large-img {
+    display: none;
+  }
+
+  .succes-case {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .cases {
+    width: 100%;
+  }
+
+  .company {
+    bottom: 250px;
+  }
+
+  .description {
+    padding: 0%;
+    margin-top: 0%;
+  }
+
+  .description h2 {
+    font-size: x-large;
+    font-weight: 900;
+  }
+
+  .description p {
+    text-align: justify;
+  }
+
+  .description button {
+    margin-top: 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .description img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .function button {
+    width: auto;
+  }
+
+  .important-cards {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}/*# sourceMappingURL=styles.css.map */
