@@ -1,3 +1,4 @@
+@use "global" as *;
 
 body {
     background-color: papayawhip;
@@ -476,6 +477,97 @@ ul {
     font-family: sans-serif;
     padding: 0 20px;
 }
+
+/** main.scss */
+.blog {
+    background-color: $white;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+    }
+
+    .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+        .process {
+            margin-bottom: 25px;
+
+            & > div {
+                & >  h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0%;
+                    font-size:30px;
+                    font-weight: 500;;
+                }
+                & > p {
+                    color: $dark-green-text;
+                    margin: 0%;
+                }
+            }
+
+            .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 180px;
+        height: auto;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border: none;
+    }
+
+  }
+
+  .card {
+    .card-title {
+        color: $ligth-grey-text;
+    }
+    .metadata {
+        margin: 14px 0;
+            .category {
+        color: $ligth-green-text;
+        font-size: small;
+    }
+
+    }
+    .read-time {
+        color: $very-light-grey-text;
+        font-size: small;
+    }
+    .card-text {
+        color: $ligth-grey-text;
+    }
+    .author {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        img {
+            border-radius: 50%;
+            width: 12%;
+            margin-right: 10px;
+        }
+        p {
+            color: $ligth-grey-text;
+            font-weight: bold;
+            font-size: small;
+        }
+    }
+  }
+
+
 
 @media (max-width: 575px) {
    .actions {
