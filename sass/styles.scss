@@ -130,6 +130,37 @@ ul {
     border-bottom-left-radius: 0%;
     border-top-left-radius: 0;
     margin-left: -10px;
+    animation-name: button1;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes button1 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+        background-color: #174144;
+    }
+    50% {
+        transform: translateX(7px);
+    }
+    75% {
+        transform: translateX(5px);
+        background-color: #174144;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+    
+
+.main form button:hover {
+    background-color: #67b54b;
+    font-family: 'Alegreya', serif;
 }
 
 .banner {
@@ -788,6 +819,29 @@ ul {
             }
             .part2 {
             width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) { // tablet
+    .important-cards {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        padding-left: 40px;
+        padding-right: 40px;        
+        }
+
+    .function button {
+        width: auto;
+       }
+
+    .part2 {
+        form {
+            flex-direction: column;
+            button {
+                border-top-left-radius: 7px !important;
+                border-bottom-left-radius: 7px !important;
             }
         }
     }
