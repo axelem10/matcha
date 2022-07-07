@@ -686,13 +686,36 @@ ul {
   border: solid 1px #a6a7aa;
   padding-left: 10px;
 }
-.free .contenido form button {
+.free .contenido form .animaboton3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   border-radius: 7px;
   border: none;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0;
   margin-left: -10px;
+  position: relative;
+  overflow: hidden;
+}
+.free .contenido form .animaboton3::after {
+  width: 100%;
+  height: 50px;
+  background: #50b1c2;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: -50px;
+  transition: 0.4s ease-in-out all;
+}
+.free .contenido form span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+.free .contenido form .animaboton3:hover::after {
+  top: 0;
 }
 .free .contenido p {
   color: #ffffff;
@@ -745,6 +768,9 @@ ul {
   padding-left: 10px;
 }
 .free2 .contenido2 .part2 form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   border-radius: 7px;
   border: none;
@@ -752,6 +778,27 @@ ul {
   border-top-left-radius: 0;
   margin-left: -10px;
   background-color: #67b54b;
+  position: relative;
+  overflow: hidden;
+}
+.free2 .contenido2 .part2 form .animaboton4::after {
+  width: 100%;
+  height: 100px;
+  background: goldenrod;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  bottom: -100px;
+  transition: 0.4s ease-in-out all;
+  border-radius: 50% 50% 0 0;
+}
+.free2 .contenido2 .part2 form span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+.free2 .contenido2 .part2 form .animaboton4:hover::after {
+  bottom: 0;
 }
 .free2 .contenido2 .part2 form p {
   color: #b3cbcd;
