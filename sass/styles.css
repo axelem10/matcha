@@ -128,13 +128,19 @@ ul {
   padding-left: 10px;
 }
 
-.main form button {
+.animaboton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
+  width: 100px;
   border-radius: 7px;
   border: none;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0;
   margin-left: -10px;
+  transition: 0.3s ease all;
+  position: relative;
   -webkit-animation-name: button1;
           animation-name: button1;
   -webkit-animation-duration: 1s;
@@ -144,6 +150,29 @@ ul {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  overflow: hidden;
+}
+
+.animaboton::after {
+  width: 100%;
+  height: 100px;
+  background: #67b54b;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: -100px;
+  transition: 0.4s ease-in-out all;
+  border-radius: 0 0 50% 50%;
+}
+
+.main form button span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.animaboton:hover::after {
+  top: 0;
 }
 
 @-webkit-keyframes button1 {
@@ -152,14 +181,12 @@ ul {
   }
   25% {
     transform: translateX(5px);
-    background-color: #174144;
   }
   50% {
     transform: translateX(7px);
   }
   75% {
     transform: translateX(5px);
-    background-color: #174144;
   }
   100% {
     transform: translateX(0);
@@ -172,24 +199,17 @@ ul {
   }
   25% {
     transform: translateX(5px);
-    background-color: #174144;
   }
   50% {
     transform: translateX(7px);
   }
   75% {
     transform: translateX(5px);
-    background-color: #174144;
   }
   100% {
     transform: translateX(0);
   }
 }
-.main form button:hover {
-  background-color: #67b54b;
-  font-family: "Alegreya", serif;
-}
-
 .banner {
   display: flex;
   flex-direction: column;
@@ -244,12 +264,40 @@ ul {
 }
 
 .cont button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   border-radius: 7px;
   border: none;
   border-bottom-left-radius: 0%;
   border-top-left-radius: 0;
   margin-left: -10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.animaboton2::after {
+  width: 200px;
+  height: 100%;
+  background: #67b54b;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  left: -200px;
+  transition: 0.4s ease-in-out all;
+  border-right: 48px solid #025157;
+  border-bottom: 48px solid #67b54b;
+}
+
+.cont form button span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+.animaboton2:hover::after {
+  left: 0;
 }
 
 .features {
@@ -709,6 +757,26 @@ ul {
   color: #b3cbcd;
 }
 
+@media (max-width: 780px) {
+  .important-cards {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .function button {
+    width: auto;
+  }
+
+  .part2 form {
+    flex-direction: column;
+  }
+  .part2 form button {
+    border-top-left-radius: 7px !important;
+    border-bottom-left-radius: 7px !important;
+  }
+}
 @media (max-width: 575px) {
   .actions {
     width: 50%;
@@ -844,25 +912,5 @@ ul {
   }
   .free2 .contenido2 .part2 {
     width: 100%;
-  }
-}
-@media (max-width: 780px) {
-  .important-cards {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .function button {
-    width: auto;
-  }
-
-  .part2 form {
-    flex-direction: column;
-  }
-  .part2 form button {
-    border-top-left-radius: 7px !important;
-    border-bottom-left-radius: 7px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
