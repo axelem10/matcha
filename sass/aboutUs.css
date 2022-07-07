@@ -1,0 +1,191 @@
+body {
+  background-color: papayawhip;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #025157;
+  text-align: center;
+  font-family: "Alegreya", serif;
+}
+
+p {
+  color: #4a4a4a;
+  font-family: Verdana;
+  font-size: medium;
+  margin: 0;
+}
+
+button {
+  color: #fff;
+  background-color: #025157;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.actions {
+  width: 20%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #67b54b;
+  margin-right: 10px;
+}
+
+.actions button {
+  background-color: #67b54b;
+  color: white;
+  font-family: sans-serif;
+  padding: 12px 14px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.presentacion {
+  text-align: center;
+  color: black;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 30px 20px;
+}
+
+.flechita {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  -webkit-animation-name: flechita;
+          animation-name: flechita;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.flechita .flechita2 {
+  -webkit-animation-name: flechita2;
+          animation-name: flechita2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.flechita .flechita2 img {
+  width: 60px;
+  transform: rotate(-90deg);
+}
+
+@-webkit-keyframes flechita {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes flechita {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes flechita2 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-350px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes flechita2 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-350px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.carta {
+  padding: 15px;
+  border-radius: 6px;
+  color: black;
+  background-color: white;
+}
+.carta img {
+  width: 100%;
+  border-radius: 6px;
+}
+.carta img:hover {
+  zoom: 3;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carta .anchor {
+  cursor: pointer;
+  display: block;
+  font-size: 17px;
+  color: #025157;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: #025157 1px 1px 2px;
+  transition: color 0.3s ease-in-out;
+  transition: font-size 3s;
+  margin: 24px 0;
+}
+.carta .anchor:hover {
+  color: #67b54b;
+  font-size: 20px;
+}/*# sourceMappingURL=aboutUs.css.map */
